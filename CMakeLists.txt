@@ -4,7 +4,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(FairCMakeModules REQUIRED)
 include(FairFindPackage2)
-find_package2(PRIVATE FairMQ COMPONENTS tidy_tool)
+find_package2(PRIVATE FairMQ REQUIRED COMPONENTS tidy_tool)
 find_package2_implicit_dependencies()
 
 include(FairMQTidy)
